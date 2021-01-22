@@ -1,0 +1,27 @@
+main {
+  height: 100vh;
+  width: 100%;
+}
+.homepage-wrapper {
+  margin-left: 100px;
+  position: relative;
+  background-image: url();
+}
+.homepage-wrapper .logo {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  width: 170px;
+  display: flex;
+}
+.homepage-wrapper .logo svg {
+  fill: var(--primary);
+  width: 100%;
+}
+
+/* Media Styles */
+@media (max-width: 770px) {
+  .homepage-wrapper .logo {
+    display: none;
+  }
+}

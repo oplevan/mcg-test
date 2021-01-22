@@ -1,0 +1,42 @@
+.nav-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 100px;
+  overflow-x: hidden;
+}
+.nav-inner {
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary);
+  color: var(--link);
+  animation: 0.25s slide-right ease-out;
+}
+.nav-inner.close {
+  animation: 0.25s slide-left ease-in;
+}
+@keyframes slide-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes slide-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Media Styles */
+@media (max-width: 770px) {
+  .nav-container {
+    left: 0;
+    top: 70px;
+  }
+}
