@@ -1,0 +1,47 @@
+.rightSideBar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  box-sizing: border-box;
+  padding: 30px 0;
+  border-left: solid 1px var(--tertiary);
+}
+
+.language-box a {
+  font-family: 'Gilroy Bold';
+  text-decoration: none;
+}
+
+.page-message-box {
+  font-size: 0.7rem;
+  line-height: 1.5rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+.social-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.social-box a:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+/* Media */
+@media (max-width: 770px) {
+  .rightSideBar {
+    width: 30px;
+    top: 50px;
+  }
+}
